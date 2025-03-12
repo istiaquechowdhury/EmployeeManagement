@@ -4,6 +4,7 @@ using EmployeeManagement.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeManagement.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250312140305_addedAdminROleTOAspnetRolesTbl")]
+    partial class addedAdminROleTOAspnetRolesTbl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,7 +79,7 @@ namespace EmployeeManagement.Web.Data.Migrations
                         new
                         {
                             Id = new Guid("d0b85c3e-4f68-4a8c-9c92-7aabc1234567"),
-                            ConcurrencyStamp = "041c7219-432e-4df6-afbf-bdf21ac51e8c",
+                            ConcurrencyStamp = "e8ed83dc-f5e1-4897-a88c-7ac67123d979",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -188,25 +191,6 @@ namespace EmployeeManagement.Web.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("a0f85c3e-4f68-4a8c-9c92-7aabc1234567"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "74a03c15-cc24-4df8-bde1-904abe13c257",
-                            Email = "admin@gmail.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@GMAIL.COM",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHePA6bxEiGh4aoCf4rEOSKyQujy2QkRXlD8sqAdyIlTr798TODq0BGz2uD0+IpLeg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "43ef8181-c6f8-4de5-bb78-7de032eaec0b",
-                            Status = false,
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationUserClaim", b =>
