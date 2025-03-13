@@ -22,67 +22,7 @@ namespace EmployeeManagement.Web.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("EmployeeManagement.Web.Areas.Employee.Entities.Employee", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Designation")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FatherName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("employees");
-                });
-
-            modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationRole", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("d0b85c3e-4f68-4a8c-9c92-7aabc1234567"),
-                            ConcurrencyStamp = "041c7219-432e-4df6-afbf-bdf21ac51e8c",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        });
-                });
-
-            modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationRoleClaim", b =>
+            modelBuilder.Entity("EmployeeManagement.Web.Entities.Employee", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -90,23 +30,75 @@ namespace EmployeeManagement.Web.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ClaimType")
+                    b.Property<string>("Department")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ClaimValue")
+                    b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RoleId")
+                    b.Property<DateOnly>("JoiningDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoleId");
+                    b.HasIndex("UserId1");
 
-                    b.ToTable("AspNetRoleClaims", (string)null);
+                    b.ToTable("employees");
                 });
 
-            modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationUser", b =>
+            modelBuilder.Entity("EmployeeManagement.Web.Entities.Leave", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly>("EndDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("LeaveType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly>("StartDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("Leaves");
+                });
+
+            modelBuilder.Entity("EmployeeManagement.Web.Identity.ApplicationUser", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -188,25 +180,67 @@ namespace EmployeeManagement.Web.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationRole", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
 
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a0f85c3e-4f68-4a8c-9c92-7aabc1234567"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "74a03c15-cc24-4df8-bde1-904abe13c257",
-                            Email = "admin@gmail.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@GMAIL.COM",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHePA6bxEiGh4aoCf4rEOSKyQujy2QkRXlD8sqAdyIlTr798TODq0BGz2uD0+IpLeg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "43ef8181-c6f8-4de5-bb78-7de032eaec0b",
-                            Status = false,
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
+                            Id = new Guid("d0b85c3e-4f68-4a8c-9c92-7aabc1234567"),
+                            ConcurrencyStamp = "801b126f-1c8f-44ca-bdda-f0a48d81ed59",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
                         });
+                });
+
+            modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationRoleClaim", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
                 });
 
             modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationUserClaim", b =>
@@ -288,6 +322,28 @@ namespace EmployeeManagement.Web.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("EmployeeManagement.Web.Entities.Employee", b =>
+                {
+                    b.HasOne("EmployeeManagement.Web.Identity.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EmployeeManagement.Web.Entities.Leave", b =>
+                {
+                    b.HasOne("EmployeeManagement.Web.Entities.Employee", "Employee")
+                        .WithMany("Leaves")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationRoleClaim", b =>
                 {
                     b.HasOne("MeetingRoomBooking.DataAccess.Identity.ApplicationRole", null)
@@ -299,7 +355,7 @@ namespace EmployeeManagement.Web.Data.Migrations
 
             modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationUserClaim", b =>
                 {
-                    b.HasOne("MeetingRoomBooking.DataAccess.Identity.ApplicationUser", null)
+                    b.HasOne("EmployeeManagement.Web.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -308,7 +364,7 @@ namespace EmployeeManagement.Web.Data.Migrations
 
             modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationUserLogin", b =>
                 {
-                    b.HasOne("MeetingRoomBooking.DataAccess.Identity.ApplicationUser", null)
+                    b.HasOne("EmployeeManagement.Web.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -323,7 +379,7 @@ namespace EmployeeManagement.Web.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MeetingRoomBooking.DataAccess.Identity.ApplicationUser", null)
+                    b.HasOne("EmployeeManagement.Web.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -332,11 +388,16 @@ namespace EmployeeManagement.Web.Data.Migrations
 
             modelBuilder.Entity("MeetingRoomBooking.DataAccess.Identity.ApplicationUserToken", b =>
                 {
-                    b.HasOne("MeetingRoomBooking.DataAccess.Identity.ApplicationUser", null)
+                    b.HasOne("EmployeeManagement.Web.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("EmployeeManagement.Web.Entities.Employee", b =>
+                {
+                    b.Navigation("Leaves");
                 });
 #pragma warning restore 612, 618
         }

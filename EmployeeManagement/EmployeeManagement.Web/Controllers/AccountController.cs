@@ -2,24 +2,24 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
-using System.ComponentModel.DataAnnotations;
-using System.Text.Encodings.Web;
 using System.Text;
-using MeetingRoomBooking.DataAccess.Identity;
 using Microsoft.AspNetCore.Authorization;
 using MeetingRoomBooking.Presentation.Models;
+using EmployeeManagement.Web.Data;
+using EmployeeManagement.Web.Identity;
+using EmployeeManagement.Web.Entities;
 
 namespace MeetingRoomBooking.Presentation.Controllers
 {
     public class AccountController : Controller
     {
-
+        private readonly ApplicationDbContext _context;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<AccountController> _logger;
-      //  private readonly IEmailUtility _emailUtility;
+        //  private readonly IEmailUtility _emailUtility;
 
 
         public AccountController(
@@ -27,6 +27,8 @@ namespace MeetingRoomBooking.Presentation.Controllers
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
             ILogger<AccountController> logger
+,
+            ApplicationDbContext context
            // IEmailUtility emailUtility
            )
         {
@@ -35,6 +37,7 @@ namespace MeetingRoomBooking.Presentation.Controllers
             _emailStore = GetEmailStore();
             _signInManager = signInManager;
             _logger = logger;
+            _context = context;
             //_emailUtility = emailUtility;
 
         }
@@ -67,7 +70,7 @@ namespace MeetingRoomBooking.Presentation.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, "User");
+                    await _userManager.AddToRoleAsync(user, "Admin");
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -92,7 +95,21 @@ namespace MeetingRoomBooking.Presentation.Controllers
                     //);
                     //_emailUtility.SendEmail(model.Email, model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
                     //await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                    //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    //
+                    //  $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                    var employee = new Employee
+                    {
+                        Name = model.UserName,
+                        Email = model.Email,
+                        Department = "Not Assigned",
+                        JoiningDate = DateOnly.FromDateTime(DateTime.Now),
+                        Status = true,
+                        UserId = Guid.Parse(userId)
+                    };
+                    _context.employees.Add(employee);
+                    await _context.SaveChangesAsync();
+
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -192,7 +209,7 @@ namespace MeetingRoomBooking.Presentation.Controllers
                 if (result.Succeeded)
                 {
 
-                    return RedirectToAction("Index", "Dashboard", new { Area = "Admin" });
+                    return RedirectToAction("Index", "Employee", new { Area = "Employee" });
                 }
                 if (result.RequiresTwoFactor)
                 {

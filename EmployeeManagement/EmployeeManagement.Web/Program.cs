@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using EmployeeManagement.Web.Data;
 using MeetingRoomBooking.DataAccess.Identity;
+using EmployeeManagement.Web.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,11 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+     name: "areas",
+     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
 
 app.MapControllerRoute(
     name: "default",
