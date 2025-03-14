@@ -3,64 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\entities\\leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\entities\\leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\identity\\applicationsigninmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\identity\\applicationsigninmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\areas\\employee\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\areas\\employee\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\areas\\employee\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\areas\\employee\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\areas\\employee\\models\\employeecreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\areas\\employee\\models\\employeecreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\areas\\employee\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\areas\\employee\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\entities\\leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\entities\\leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\areas\\employee\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\areas\\employee\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\employeemanagement\\employeemanagement\\employeemanagement.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2F5EFE03-D1D3-4874-9049-0A6BD5F66AEC}|EmployeeManagement.Web\\EmployeeManagement.Web.csproj|solutionrelative:employeemanagement.web\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,64 +58,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "00000000000000_CreateIdentitySchema.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T09:52:50.824Z",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Create.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Create.cshtml",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Create.cshtml",
+              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Create.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAADQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T17:44:29.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Leave.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Entities\\Leave.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Entities\\Leave.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Entities\\Leave.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Entities\\Leave.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:45:22.068Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ApplicationUserManager.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Identity\\ApplicationUserManager.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Identity\\ApplicationUserManager.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Identity\\ApplicationUserManager.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Identity\\ApplicationUserManager.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAawAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:46:00.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApplicationSignInManager.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Identity\\ApplicationSignInManager.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Identity\\ApplicationSignInManager.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Identity\\ApplicationSignInManager.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Identity\\ApplicationSignInManager.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAawAsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:45:51.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "EmployeeManagement.Web\\Entities\\Employee.cs",
               "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Entities\\Employee.cs",
               "RelativeToolTip": "EmployeeManagement.Web\\Entities\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:37:28.546Z"
+              "WhenOpened": "2025-03-14T16:14:45.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeCreateModel.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Models\\EmployeeCreateModel.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Models\\EmployeeCreateModel.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Models\\EmployeeCreateModel.cs",
+              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Models\\EmployeeCreateModel.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:14:28.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Leave.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Entities\\Leave.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Entities\\Leave.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Entities\\Leave.cs",
+              "RelativeToolTip": "EmployeeManagement.Web\\Entities\\Leave.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T15:39:39.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T15:34:55.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:59:19.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T13:57:45.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "EmployeeManagement.Web\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T13:41:35.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LogIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
+              "RelativeToolTip": "EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T13:36:30.897Z"
             },
             {
               "$type": "Document",
@@ -145,117 +175,10 @@
               "RelativeDocumentMoniker": "EmployeeManagement.Web\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Controllers\\AccountController.cs",
               "RelativeToolTip": "EmployeeManagement.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:15:42.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T05:30:24.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Identity\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Identity\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Identity\\ApplicationUser.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Identity\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T07:52:30.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LogIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
-              "RelativeToolTip": "EmployeeManagement.Web\\Views\\Account\\LogIn.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T06:31:16.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Program.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Program.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T06:27:55.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
-              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Views\\Employee\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T03:36:18.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "EmployeeManagement.Web\\Areas\\Employee\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T05:50:32.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "EmployeeManagement.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T06:21:40.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "EmployeeManagement.Web\\ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-03-12T05:46:21.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "EmployeeManagement.Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.Web\\appsettings.json",
-              "RelativeToolTip": "EmployeeManagement.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-12T05:26:45.329Z"
+              "WhenOpened": "2025-03-14T13:33:32.036Z",
+              "EditorCaption": ""
             }
           ]
         }

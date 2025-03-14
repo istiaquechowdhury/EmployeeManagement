@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using MeetingRoomBooking.Presentation.Models;
 using EmployeeManagement.Web.Data;
 using EmployeeManagement.Web.Identity;
+using EmployeeManagement.Web.Entities;
 
 namespace MeetingRoomBooking.Presentation.Controllers
 {
@@ -97,17 +98,15 @@ namespace MeetingRoomBooking.Presentation.Controllers
                     //
                     //  $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    //var employee = new Employee
-                    //{
-                    //    Name = model.UserName,
-                    //    Email = model.Email,
-                    //    Department = "Not Assigned",
-                    //    JoiningDate = DateOnly.FromDateTime(DateTime.Now),
-                    //    Status = true,
-                    //    UserId = Guid.Parse(userId)
-                    //};
-                    //_context.employees.Add(employee);
-                    //await _context.SaveChangesAsync();
+                    var employee = new Employee
+                    {
+                        Name = model.UserName,
+                        Email = model.Email,
+                     
+                        UserId = Guid.Parse(userId)
+                    };
+                    _context.employees.Add(employee);
+                    await _context.SaveChangesAsync();
 
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)

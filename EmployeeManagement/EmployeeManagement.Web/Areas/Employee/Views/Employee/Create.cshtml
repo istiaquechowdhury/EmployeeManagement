@@ -1,0 +1,74 @@
+﻿@using EmployeeManagement.Web.Areas.Employee.Models
+
+@{
+    ViewData["Title"] = "Create";
+}
+@model EmployeeCreateModel
+
+<form asp-area="Employee" asp-controller="Employee" asp-action="Create" asp-antiforgery="true" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <!-- Full-width fields -->
+        <div class="col-md-12">
+
+            <!-- Item Name Section -->
+            <div class="mb-4">
+                <input type="date" asp-for="JoiningDate" class="form-control-underline" placeholder="Joining Date">
+                <span asp-validation-for="JoiningDate" class="text-danger"></span>
+            </div>
+
+            <!-- Category and Measurement Unit Section - side by side -->
+
+        </div>
+    </div>
+   
+
+    <div class="row">
+        <!-- Full-width fields -->
+        
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="Department">Department</label>
+                <select asp-for="Department" class="form-control" asp-items="ViewBag.Department">
+                    <option value="">Select Department</option>
+                </select>
+                <span asp-validation-for="Department" class="text-danger"></span>
+            </div>
+
+            <!-- Category and Measurement Unit Section - side by side -->
+
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <!-- Left side starting from Barcode -->
+        <div class="col-md-6">
+            <!-- Stock Quantity and Barcode Section -->
+            <!-- Description Section -->
+            <!-- Upload Image and Status Section -->
+          
+
+            <div class="d-flex align-items-center">
+                <label asp-for="Status" class="mr-2 mb-0">Is active Meeting?</label>
+                <input type="checkbox" asp-for="Status">
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Right side for 'Write a post' section -->
+
+    </div>
+
+    <!-- Save Buttons -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary btn-sm mr-2 px-3" id="saveButton">Save</button>
+          
+           
+        </div>
+    </div>
+
+    
+</form>
+
