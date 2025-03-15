@@ -21,4 +21,11 @@
     <Folder Include="Areas\Employee\Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Areas\Employee\Views\_ViewImports.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

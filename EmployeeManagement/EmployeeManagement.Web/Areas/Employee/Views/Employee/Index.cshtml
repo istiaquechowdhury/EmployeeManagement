@@ -1,7 +1,77 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿@using EmployeeManagement.Web.Entities
+@model List<Employee>
 
-<h1>Employee List</h1>
+<h2 class="text-center my-4">Employee List</h2>
+
+<div class="container">
+    <table class="table table-bordered table-hover shadow-sm text-center">
+        <partial name="_EmployeeDetailsModalPartial" />
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Joining Date</th>
+                <th>Status</th>
+                <th>Action</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr class="align-middle">
+                    <td>@employee.Name</td>
+                    <td>@employee.Email</td>
+                    <td>@employee.Department</td>
+                    <td>@employee.JoiningDate</td>
+                    
+                    <td>
+                        <span class="badge @(employee.Status ? "bg-success" : "bg-danger")">
+                            @(employee.Status ? "Active" : "Inactive")
+                        </span>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Update", "Employee", new { id = employee.Id })" class="btn btn-primary btn-sm">
+                            Update
+                        </a>
+                    </td>
+                    <td>
+                        <a href="javascript:void(0);" class="btn btn-info btn-sm" onclick="showEmployeeDetails('@employee.UserId')">
+                            Details
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function showEmployeeDetails(userId) {
+        $.ajax({
+            url: '@Url.Action("GetEmployeeDetails", "Employee")',
+            type: 'GET',
+            data: { userId: userId },
+            success: function (data) {
+                if (data) {
+                    $("#empName").text(data.name);
+                    $("#empEmail").text(data.email);
+                    $("#empPhone").text(data.phoneNumber);
+                    $("#empDepartment").text(data.department);
+                    $("#empJoiningDate").text(data.joiningDate);
+                    $("#empEmailConfirmed").text(data.emailConfirmed ? "Yes" : "No");
+
+                    $("#employeeDetailsModal").modal("show");
+                } else {
+                    alert("Employee details not found!");
+                }
+            },
+            error: function () {
+                alert("Error retrieving details!");
+            }
+        });
+    }
+</script>
 
