@@ -80,13 +80,13 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <input type="hidden" asp-for="UserId" />
-                <input type="hidden" asp-for="Id" />
+                
                 <h2 class="text-center mb-2">Update Employee</h2>
                 <hr class="border-top border-dark mb-4">
 
                 <form asp-area="Employee" asp-controller="Employee" asp-action="Update" asp-antiforgery="true" method="post" enctype="multipart/form-data">
-
+                    <input type="hidden" asp-for="UserId" />
+                    <input type="hidden" asp-for="Id" />
                     <div class="row">
                         <div class="col-md-6">
                            
