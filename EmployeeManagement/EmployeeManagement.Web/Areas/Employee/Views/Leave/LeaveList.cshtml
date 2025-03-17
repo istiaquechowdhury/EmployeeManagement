@@ -1,9 +1,5 @@
 ﻿@using EmployeeManagement.Web.Entities
 
-@{
-    ViewData["Title"] = "LeaveList";
-}
-
 @model List<Leave>
 
 @{
@@ -20,7 +16,7 @@
             <th>Start Date</th>
             <th>End Date</th>
             <th>Status</th>
-            <th>Approved By</th>
+            <th>Authorized By</th>
         </tr>
     </thead>
     <tbody>
@@ -33,6 +29,19 @@
                 <td>@leave.EndDate</td>
                 <td>@leave.Status</td>
                 <td>@leave.ApprovedBy</td>
+                <td>
+                    @if (leave.Status == "Pending")
+                    {
+                        <form asp-action="ApproveLeave" method="post">
+                            <input type="hidden" name="id" value="@leave.Id" />
+                            <button type="submit" class="btn btn-success">Approve</button>
+                        </form>
+                        <form asp-action="RejectLeave" method="post">
+                            <input type="hidden" name="id" value="@leave.Id" />
+                            <button type="submit" class="btn btn-danger">Reject</button>
+                        </form>
+                    }
+                </td>
             </tr>
         }
     </tbody>

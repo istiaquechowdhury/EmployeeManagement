@@ -2,6 +2,7 @@
 using EmployeeManagement.Web.Data;
 using EmployeeManagement.Web.Entities;
 using EmployeeManagement.Web.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -83,23 +84,51 @@ namespace EmployeeManagement.Web.Areas.Employee.Controllers
 
         // Approve/Reject Leave Request
         [HttpPost]
-        public async Task<IActionResult> ApproveLeave(int id, string action)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ApproveLeave(int id)
         {
             var leave = await _context.Leaves.FindAsync(id);
+            if (leave == null)
+            {
+                return NotFound();
+            }
 
-            if (leave == null) return NotFound();
+            // Get the current user (assuming they are an admin/manager)
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Unauthorized();
+            }
 
-            if (action == "Approve")
-                leave.Status = "Approved";
-            else
-                leave.Status = "Rejected";
+            leave.Status = "Approved";  // ✅ Update leave status
+            leave.ApprovedBy = user.UserName; // ✅ Set approver's username
 
-            leave.ApprovedBy = User.Identity.Name;
-            _context.Update(leave);
+            _context.Leaves.Update(leave);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("LeaveRequests");
+            return RedirectToAction("LeaveList");
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RejectLeave(int id)
+        {
+            var leave = await _context.Leaves.FindAsync(id);
+            if (leave == null)
+            {
+                return NotFound();
+            }
+
+            leave.Status = "Rejected";
+            leave.ApprovedBy = User.Identity.Name;
+
+            _context.Leaves.Update(leave);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("LeaveList");
+        }
+
+
     }
 }
 
