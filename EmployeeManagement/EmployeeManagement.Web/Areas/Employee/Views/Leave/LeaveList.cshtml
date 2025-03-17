@@ -1,0 +1,41 @@
+﻿@using EmployeeManagement.Web.Entities
+
+@{
+    ViewData["Title"] = "LeaveList";
+}
+
+@model List<Leave>
+
+@{
+    ViewData["Title"] = "Leave List";
+}
+
+<h2>Leave List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Leave Type</th>
+            <th>Reason</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Approved By</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var leave in Model)
+        {
+            <tr>
+                <td>@leave.LeaveType</td>
+                <td>@leave.Reason</td>
+                <td>@leave.StartDate</td>
+                <td>@leave.EndDate</td>
+                <td>@leave.Status</td>
+                <td>@leave.ApprovedBy</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

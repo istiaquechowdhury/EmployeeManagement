@@ -52,7 +52,7 @@ namespace EmployeeManagement.Web.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("employees");
+                    b.ToTable("employees", (string)null);
                 });
 
             modelBuilder.Entity("EmployeeManagement.Web.Entities.Leave", b =>
@@ -63,7 +63,10 @@ namespace EmployeeManagement.Web.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("EmployeeId")
+                    b.Property<string>("ApprovedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
                     b.Property<DateOnly?>("EndDate")
@@ -85,7 +88,7 @@ namespace EmployeeManagement.Web.Data.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("Leaves");
+                    b.ToTable("Leaves", (string)null);
                 });
 
             modelBuilder.Entity("EmployeeManagement.Web.Identity.ApplicationUser", b =>
@@ -185,7 +188,7 @@ namespace EmployeeManagement.Web.Data.Migrations
                         new
                         {
                             Id = new Guid("d0b85c3e-4f68-4a8c-9c92-7aabc1234567"),
-                            ConcurrencyStamp = "fde21dee-7db9-4448-92d6-bf50ed2aef0b",
+                            ConcurrencyStamp = "e5afa96b-d847-4269-987d-13429ad2cbb0",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -307,7 +310,9 @@ namespace EmployeeManagement.Web.Data.Migrations
                 {
                     b.HasOne("EmployeeManagement.Web.Entities.Employee", "Employee")
                         .WithMany("Leaves")
-                        .HasForeignKey("EmployeeId");
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Employee");
                 });

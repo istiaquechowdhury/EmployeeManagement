@@ -36,6 +36,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcRW1wbG95ZWVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/istia/OneDrive/Desktop/EmployeeManagement/EmployeeManagement/EmployeeManagement.Web/Areas/Employee/Views/Leave/LeaveList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcTGVhdmVcTGVhdmVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/istia/OneDrive/Desktop/EmployeeManagement/EmployeeManagement/EmployeeManagement.Web/Areas/Employee/Views/Leave/LeaveRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcTGVhdmVcTGVhdmVSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/istia/OneDrive/Desktop/EmployeeManagement/EmployeeManagement/EmployeeManagement.Web/Areas/Employee/Views/Leave/RequestLeave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcTGVhdmVcUmVxdWVzdExlYXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/istia/OneDrive/Desktop/EmployeeManagement/EmployeeManagement/EmployeeManagement.Web/Areas/Employee/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRW1wbG95ZWVcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

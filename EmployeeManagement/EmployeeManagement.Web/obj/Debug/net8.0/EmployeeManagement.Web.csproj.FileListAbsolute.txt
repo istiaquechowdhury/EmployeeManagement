@@ -889,5 +889,5 @@ C:\Users\Threesquare\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManag
 C:\Users\Threesquare\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManagement.Web\obj\Debug\net8.0\EmployeeManagement.Web.pdb
 C:\Users\Threesquare\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManagement.Web\obj\Debug\net8.0\EmployeeManagement.Web.genruntimeconfig.cache
 C:\Users\Threesquare\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManagement.Web\obj\Debug\net8.0\ref\EmployeeManagement.Web.dll
-C:\Users\istia\OneDrive\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManagement.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\istia\OneDrive\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManagement.Web\obj\Debug\net8.0\scopedcss\Areas\Employee\Views\Shared\_EmployeeLayout.cshtml.rz.scp.css
+C:\Users\istia\OneDrive\Desktop\EmployeeManagement\EmployeeManagement\EmployeeManagement.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

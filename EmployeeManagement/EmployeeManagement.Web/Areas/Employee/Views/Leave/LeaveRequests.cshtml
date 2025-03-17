@@ -1,0 +1,50 @@
+﻿@using EmployeeManagement.Web.Entities
+
+@{
+    ViewData["Title"] = "LeaveRequests";
+}
+
+@model IEnumerable<Leave>
+
+<h2>Leave Requests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Leave Type</th>
+            <th>Reason</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Approved By</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var leave in Model)
+        {
+            <tr>
+                <td>@leave.Employee.Name</td>
+                <td>@leave.LeaveType</td>
+                <td>@leave.Reason</td>
+                <td>@leave.StartDate</td>
+                <td>@leave.EndDate</td>
+                <td>@leave.Status</td>
+                <td>@leave.ApprovedBy</td>
+                <td>
+                    @if (leave.Status == "Pending")
+                    {
+                        <form asp-action="ApproveLeave" method="post">
+                            <input type="hidden" name="id" value="@leave.Id" />
+                            <button type="submit" name="action" value="Approve" class="btn btn-success">Approve</button>
+                            <button type="submit" name="action" value="Reject" class="btn btn-danger">Reject</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
