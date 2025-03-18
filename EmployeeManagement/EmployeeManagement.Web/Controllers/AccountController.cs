@@ -19,7 +19,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<AccountController> _logger;
-        //  private readonly IEmailUtility _emailUtility;
 
 
         public AccountController(
@@ -29,7 +28,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
             ILogger<AccountController> logger
 ,
             ApplicationDbContext context
-           // IEmailUtility emailUtility
            )
         {
             _userManager = userManager;
@@ -38,7 +36,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
             _signInManager = signInManager;
             _logger = logger;
             _context = context;
-            //_emailUtility = emailUtility;
 
         }
 
@@ -75,29 +72,14 @@ namespace MeetingRoomBooking.Presentation.Controllers
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    //var callbackUrl = Url.Action("ConfirmEmail",
-                    //    "Account",
-                    //    values: new { area = "", userId = userId, code = code, returnUrl = model.ReturnUrl },
-                    //    protocol: Request.Scheme
-                    //);
+                    
                                             var callbackUrl = Url.Action(
-                            "ConfirmEmail", // Action name
-                            "Account",      // Controller name
-                            new { userId = userId, code = code }, // Route values
+                            "ConfirmEmail", 
+                            "Account",     
+                            new { userId = userId, code = code }, 
                             protocol: Request.Scheme);
 
-                    //_emailUtility.SendEmail(
-                    //            model.Email,
-                    //            model.Email,
-                    //            "Confirm your Email",
-                    //            $"<p>Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.</p>",
-                    //            isHtml: true
-                    //);
-                    //_emailUtility.SendEmail(model.Email, model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-                    //await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                    //
-                    //  $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
+                   
                     var employee = new Employee
                     {
                         Name = model.UserName,
@@ -116,7 +98,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        //return LocalRedirect(model.ReturnUrl);
 
                         
                         return RedirectToAction("Login", "Account");
@@ -125,7 +106,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
                 }
                 foreach (var error in result.Errors)
                 {
-                    //ModelState.AddModelError(string.Empty, error.Description);
                     if (error.Code == "DuplicateUserName") 
                     {
                         TempData["error"] = "Username is already taken.";
@@ -142,7 +122,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
                 }
             }
 
-            // If we got this far, something failed, redisplay form
            
             return View(model);
         }
@@ -176,7 +155,6 @@ namespace MeetingRoomBooking.Presentation.Controllers
 
             model.ReturnUrl = returnUrl == null ? Url.Content("~/") : returnUrl;
 
-            // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             model.ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -201,13 +179,12 @@ namespace MeetingRoomBooking.Presentation.Controllers
                     TempData["error"] = "Email or Password is invalid";
                     return View(model);
                 }
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+             
                 var result = await _signInManager.PasswordSignInAsync(user.UserName,model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
 
-                    return RedirectToAction("Index", "Employee", new { Area = "Employee" });
+                    return RedirectToAction("Index", "Dashboard", new { Area = "Employee" });
                 }
                 if (result.RequiresTwoFactor)
                 {
@@ -220,13 +197,11 @@ namespace MeetingRoomBooking.Presentation.Controllers
                 }
                 else
                 {
-                    //ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                     TempData["error"] = "Email or Password is invalid";
                     return View(model);
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
         public async Task<IActionResult> LogoutAsync(string returnUrl = null)
@@ -238,32 +213,7 @@ namespace MeetingRoomBooking.Presentation.Controllers
             return LocalRedirect(returnUrl);
         }
    
-        [HttpGet]
-        [AllowAnonymous]
-        public async Task<IActionResult> ConfirmEmail(string userId, string code)
-        {
-            if (userId == null || code == null)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-
-            var user = await _userManager.FindByIdAsync(userId);
-            if (user == null)
-            {
-                return NotFound($"Unable to load user with ID '{userId}'.");
-            }
-
-            var decodedCode = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
-            var result = await _userManager.ConfirmEmailAsync(user, decodedCode);
-            if (result.Succeeded)
-            {
-                return View("ConfirmEmail"); // Display confirmation success page
-            }
-            else
-            {
-                return View("Error"); // Display an error page
-            }
-        }
+     
 
         [HttpGet]
         [AllowAnonymous]
@@ -278,14 +228,7 @@ namespace MeetingRoomBooking.Presentation.Controllers
         }
 
 
-        [HttpGet]
-        [AllowAnonymous]
-        public IActionResult RegisterConfirmation(string email, string returnUrl = null)
-        {
-            ViewData["Email"] = email;
-            ViewData["ReturnUrl"] = returnUrl;
-            return View();
-        }
+       
       
 
         [HttpGet]
@@ -295,15 +238,12 @@ namespace MeetingRoomBooking.Presentation.Controllers
             var user = await _userManager.FindByNameAsync(username);
             if (user != null)
             {
-                return Json(false); // Username is already taken
+                return Json(false); 
             }
-            return Json(true); // Username is available
+            return Json(true); 
         }
 
-        public IActionResult AccessDenied()
-        {
-            return View();
-        }
+       
 
 
     }

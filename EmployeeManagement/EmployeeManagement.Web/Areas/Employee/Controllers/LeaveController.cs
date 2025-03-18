@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeManagement.Web.Areas.Employee.Controllers
 {
-    [Area("Employee")]
+    [Area("Employee"),Authorize]
     public class LeaveController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -42,7 +42,7 @@ namespace EmployeeManagement.Web.Areas.Employee.Controllers
                 var user = await _userManager.GetUserAsync(User);
                 if (user == null)
                 {
-                    return Unauthorized(); // No logged-in user
+                    return Unauthorized();
                 }
 
                 var employee = await _context.employees.FirstOrDefaultAsync(e => e.UserId == user.Id);
@@ -57,7 +57,7 @@ namespace EmployeeManagement.Web.Areas.Employee.Controllers
                     LeaveType = model.LeaveType,
                     StartDate = model.StartDate,
                     EndDate = model.EndDate,
-                    EmployeeId = employee.Id,  // 🔥 Assigned automatically
+                    EmployeeId = employee.Id,  
                     Status = "Pending",
                     ApprovedBy = null
                 };
@@ -75,14 +75,12 @@ namespace EmployeeManagement.Web.Areas.Employee.Controllers
             return View(model);
         }
 
-        // GET: Leave Requests List
         public async Task<IActionResult> LeaveRequests()
         {
             var leaves = await _context.Leaves.Include(l => l.Employee).ToListAsync();
             return View(leaves);
         }
 
-        // Approve/Reject Leave Request
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ApproveLeave(int id)
@@ -93,15 +91,14 @@ namespace EmployeeManagement.Web.Areas.Employee.Controllers
                 return NotFound();
             }
 
-            // Get the current user (assuming they are an admin/manager)
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
                 return Unauthorized();
             }
 
-            leave.Status = "Approved";  // ✅ Update leave status
-            leave.ApprovedBy = user.UserName; // ✅ Set approver's username
+            leave.Status = "Approved";  
+            leave.ApprovedBy = user.UserName; 
 
             _context.Leaves.Update(leave);
             await _context.SaveChangesAsync();
